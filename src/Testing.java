@@ -3,7 +3,6 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import com.gargoylesoftware.htmlunit.BrowserVersion;
 
-
 public class Testing {
 
 	/**
@@ -17,6 +16,7 @@ public class Testing {
 		String actmsg=driver.findElement(By.xpath("html/body")).getText();
 		System.out.println("Expected Message : "+expmsg);
 		System.out.println("Actual Message   : "+actmsg);
+		System.out.println("Testing Message");
 		if(expmsg.equals(actmsg))
 		{
 			System.out.println("Testing has Passed");
